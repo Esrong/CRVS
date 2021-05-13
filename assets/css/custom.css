@@ -4,7 +4,7 @@ body {
     position: relative;
     height: 100%!important;
     width: 100%;
-    font-family: Arial,sans-serif;
+    font-family: Arial, sans-serif;
     letter-spacing: 0.01em;
     -webkit-font-smoothing: antialiased;
     font-size: 13px;
@@ -16,8 +16,74 @@ html {
     height: 100%!important;
     position: relative;
 }
+
 .iraa {
     background-color: green;
     float: right;
+}
+.main-wrapper{
+    width: 100%;
+}
+.form-group {
+    display:flex;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+}
+.single-form{
+    /* border: 1px solid #a0a0a0; */
+    padding: 10px;
+    width: 90%;
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
 
+}
+
+.single-form input, .single-form select{
+    padding: 10px 4px;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 0;
+    border: 1px solid #898989;
+    transition: all .8s;
+    border-radius: 4px;
+    /* margin-bottom: 15px; */
+}
+
+.single-form label{
+    margin-bottom: 0;
+}
+button{
+    width: 100px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 85%;
+    
+}
+.item>label, .item>input{
+    display: inline-flex;
+}
+
+.gender{
+    display: inline-block;
+    padding: 10px;
+    align-content:center;
+}
+
+
+.single-form input:focus{
+    /* border-color: #80CCFA; */
+    border-color: lightseagreen;
+}
+@media (max-width:650px){
+    .form-group{
+        flex-direction: column;
+    }
+    .item{
+        width: 100%;
+    }
 }

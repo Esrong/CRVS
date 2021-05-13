@@ -131,52 +131,225 @@
         <!-- Page Sidebar -->
         <div class="page-inner">
             <div class="page-title">
-                <div class="page-breadcrumb col-md-6 center">
+                <div class="page-breadcrumb ">
                     <ol class="breadcrumb breadcrumb-with-header">
                         <li>
                             <h2 class="breadcrumb-header">Ethiopia Civil Registration and Vital Statistics</h2>
-                            <h2>Birth Registration</h2>
+                            <h2 class="registration-header">Birth Registration Form</h2>
                         </li>
                     </ol>
                 </div>
-            </div>
-            <div id="main-wrapper">
-                <div class="row">
-                    <div class="col-md-6 center">
-                        <div class="panel panel-white">
-                            <div class="panel-heading clearfix">
-                                <h4 class="panel-title">Formi-Dhaloota</h4>
-                            </div>
-                            <div class="panel-body">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Maqaa</label>
-                                        <input type="text" class="form-control m-t-xxs" id="exampleInputEmail1" placeholder="Maqaa">
-                                        <label for="exampleInputEmail1">Maqaa</label>
 
-                                    </div>
-                                    <div class="checkbox">
-                                        <label class="no-s">
-                                                <input type="checkbox"> Check me out
-                                            </label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary m-t-xs m-b-xs">Submit</button>
-                                </form>
-                            </div>
+                <div id="main-wrapper" >
+                    <div class="row">
+                        <div class="col-md-12 center">
+                            <div class="panel panel-white">
+                                <div class="panel-heading clearfix">
+                                    <!-- <h4 class="panel-title">Formi-Dhaloota</h4> -->
+                                </div>
+                                <div class="form-wrapper">
+                                    <form action="">
+                                        <div class="form-group form-class">
+                                            <div class="single-form child-info">
+                                                <!-- Child full name -->
+                                                <div class="item child-info-head">
+                                                    <h4>Child Information</h4>
+                                                </div>
+                                                <div class="item child-name father-name">
+                                                    <label for="child name">Child Name</label>
+                                                    <input type="text" >
+                                                </div>
+                                                <div class="item child-father-name">
+                                                    <label for="child name">Father Name</label>
+                                                    <input type="text" > 
+                                                </div>
+                                                <div class="item child-grandfather-name">
+                                                    <label for="child name" class="gf_name">Grandfather Name</label>
+                                                    <input type="text" > 
+                                                </div>
 
+                                                <!-- GENDER -->
+                                                <hr>
+                                                <div class="item gender">
+                                                    <label for="gender" style="margin-bottom: 0;">Gender</label> <br>
+                                                    <input type="radio" name="gender"> Male
+                                                    <input type="radio" name="gender"> Female
+                                                </div>
+                                                
+
+                                                <!-- date of birth -->
+                                                <div class="item birth-date">
+                                                    <label for="birth_date">Date of Birth</label> 
+                                                    <input type="date" name="birth_date" id="" > 
+                                                </div>
+                    
+                                                <!-- place of birth -->
+                                                <div class="item birth-place">
+                                                    <label for="birth_place"> Place of Birth</label> 
+                                                    <input type="text" name="birth_place" id=""> 
+                                                </div>
+ 
+                                                <!-- type of birth -->
+                                                <div class="item birth-type">
+                                                    <label for="birth_type">Type of Birth</label> 
+                                                    <select name="" id="">
+                                                        <option value="single">Single</option>
+                                                        <option value="more">More</option>
+                                                    </select> 
+                                                </div>
+
+                                                <!-- aid rendered during birth -->
+                                                <div class="item birth-aid">
+                                                    <label for="birth_aid">Aid during Birth</label> 
+                                                    <input type="text" name="" id=""> 
+                                                </div>
+                                
+                                                <!-- father info -->
+                                                <div class="item parent-info-header">
+                                                    <h4>Child Father's information</h4>
+                                                </div>
+                                                <div class="item child-parent-fullname">
+                                                    <label for="">Father's full name</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="item child-parent-birth-place">
+                                                    <label for="">place of birth</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="item child-parent-birth-date">
+                                                    <label for="">Date of Birth</label>
+                                                    <input type="date" name="" id="">
+                                                </div>
+                                                <div class="item child-parent-residence">
+                                                    <label for="">Principal Residence</label>
+                                                    <input type="text" name="" id="">
+                                                </div>
+                                                <div class="item child-parent-marital-status">
+                                                    <label for="">Marital Status</label>
+                                                    <input type="radio" name="marital_status" id=""> Married
+                                                    <input type="radio" name="marital_status" id=""> Divorced
+                                                </div>
+                                                <div class="item child-parent-citizenship">
+                                                    <label for="">Citizenship</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="item child-parent-religion">
+                                                    <label for="">Religion</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="item child-parent-ethnic">
+                                                    <label for="">Ethnic origin</label>
+                                                    <input type="text">
+                                                </div>
+                                                <!-- <label for="">Signature</label>
+                                                    <input type="text"> -->
+                                            </div>
+                                            <div class="item single-form parent-info">
+                                                
+                                                
+                                                <!-- mother info -->
+                                                <div class="item parent-info-header">
+                                                    <h4>Child Mother's information</h4>
+                                                </div>
+                                                <div class="item child-parent-fullname">
+                                                    <label for="">Mother's full name</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="item child-parent-birth-place">
+                                                    <label for="">place of birth</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="item child-parent-birth-date">
+                                                    <label for="">Date of Birth</label>
+                                                    <input type="date" name="" id="">
+                                                </div>
+                                                <div class="item child-parent-residence">
+                                                    <label for="">Principal Residence</label>
+                                                    <input type="text" name="" id="">
+                                                </div>
+                                                <div class="item child-parent-marital-status">
+                                                    <label for="">Marital Status</label>
+                                                    <input type="radio" name="marital_status" id=""> Married
+                                                    <input type="radio" name="marital_status" id=""> Divorced
+                                                </div>
+                                                <div class="item child-parent-citizenship">
+                                                    <label for="">Citizenship</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="item child-parent-religion">
+                                                    <label for="">Religion</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="item child-parent-ethnic">
+                                                    <label for="">Ethnic origin</label>
+                                                    <input type="text">
+                                                </div>
+                                                <!-- <label for="">Signature</label>
+                                                    <input type="text"> -->
+                                                <div class="item other-declarant-header">
+                                                    <h4>Declarant other than parents</h4>
+                                                </div>
+                                                <div class="item declarant-fullname">
+                                                    <label for="">Declarant Full Name</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="item declatant-relation-with-child">
+                                                    <label for="">Relation with child</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="item declarant-gender">
+                                                    <label for="">Gender</label>
+                                                    <input type="radio" name="gender" id=""> Male
+                                                    <input type="radio" name="gender" id=""> Female
+                                                    <input type="radio" name="gender" id=""> Other
+                                                </div>
+                                                <div class="item declarant-birth-date">
+                                                    <label for="">Birth date</label>
+                                                    <input type="date" name="" id="">
+                                                </div>
+                                                <div class="item declarant-birth-place">
+                                                    <label for="">Birth place</label>
+                                                    <input type="text">
+                                                </div>
+                                                <div class="item delarant-residence">
+                                                    <label for="">Principal Residence</label>
+                                                    <input type="text">
+                                                </div>
+                                                <!-- officer info -->
+                                                <div class="item officer-info-header">
+                                                    <h4>Officer</h4>
+                                                </div>
+                                                <div class="item officer-name">
+                                                    <label for="">Officer Name</label>
+                                                    <input type="text">
+                                                </div>
+                                                <!-- <label for="">Signature</label>
+                                                    <input type="text"> -->
+                                                <div class="item seal">
+                                                    <label for="">Seal of the Administrative office</label>
+                                                    <input type="text" name="" id="">
+                                                </div>
+                                                <div class="item registration-date">
+                                                    <label for="">Date of Registration</label>
+                                                    <input type="date" name="" id="">
+                                                </div>
+
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+
+                                                
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-
                 </div>
-                <!-- Row -->
-            </div>
-            <!-- Main Wrapper -->
-            <div class="page-footer">
-                <p class="no-s">Made with <i class="fa fa-heart"></i> by stacks</p>
             </div>
         </div>
-        <!-- Page Inner -->
+  
+                            <!-- Page Inner -->
     </main>
     <!-- Page Content -->
 
